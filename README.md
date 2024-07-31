@@ -9,7 +9,8 @@
   <br>
   path formatting with customizable whitespace handling.
   <br>
-  Makes advanced String manipulations a piece of cake. 🦥
+  <br>
+  <em>Makes advanced String manipulations a piece of cake.</em> 🦥
 </div>
 
 <br>
