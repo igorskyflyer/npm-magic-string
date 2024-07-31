@@ -109,6 +109,40 @@ Returns the current instance of MagicString.
 
 ---
 
+### `appendSingleQuoted(value: StringValue): MagicString`
+
+*Appends a single-quoted value to the accumulator.*
+
+`value` - The value to append.
+
+<br>
+
+Returns the current instance of MagicString.
+
+---
+
+### `appendQuoted(value: StringValue): MagicString`
+
+*Appends a double-quoted value to the accumulator.*
+
+`value` - The value to append.
+
+<br>
+
+Returns the current instance of MagicString.
+
+---
+
+### `trimAll(): MagicString`
+
+*Trims all whitespace in the accumulator.*
+
+<br>
+
+Returns the current instance of MagicString.
+
+---
+
 ## ✨ Examples
 
 `example.ts`
