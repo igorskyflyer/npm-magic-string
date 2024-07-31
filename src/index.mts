@@ -82,6 +82,14 @@ export class MagicString {
   }
 
   /**
+   * Gets the accumulator value.
+   * @returns Returns the accumulator as a string.
+   */
+  get value(): string {
+    return this.#accumulator
+  }
+
+  /**
    * Checks if the accumulator is empty.
    * @returns Returns true if the accumulator is empty, false otherwise.
    */
@@ -213,13 +221,5 @@ export class MagicString {
   toUpperCase(): MagicString {
     this.#accumulator = this.#accumulator.toUpperCase()
     return this
-  }
-
-  /**
-   * Gets the accumulator value.
-   * @returns Returns the accumulator as a string.
-   */
-  get value(): string {
-    return this.#accumulator
   }
 }
