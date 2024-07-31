@@ -84,7 +84,7 @@ npm i '@igor.dvlpr/magic-string'
 
 ## 🤹🏼 API
 
-All string-related methods accept a type of `StringValue` defined as:
+All string-related methods use a common string type that can either be a string or a string array. `StringValue` defined as:
 
 ### `type StringValue = string | string[]`
 
