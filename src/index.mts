@@ -183,9 +183,7 @@ export class MagicString {
       return this.#wrapString(value, '"')
     }
 
-    this.#accumulator += value
-
-    return this
+    return this.#wrapString(value)
   }
 
   /**
