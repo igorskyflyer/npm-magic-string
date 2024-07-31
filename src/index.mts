@@ -1,5 +1,8 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
+/**
+ * A common string type for all string-related methods that can either be a string or a string array.
+ */
 type StringValue = string | string[]
 
 /**
