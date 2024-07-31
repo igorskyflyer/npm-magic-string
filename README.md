@@ -5,7 +5,9 @@
 <div align="center">
   🧵 An expressive, chainable library for advanced string manipulations.
   <br>
-  Supports appending, prepending, trimming, quoting, and path formatting with customizable whitespace handling.
+  Supports appending, prepending, trimming, quoting,
+  <br>
+  and path formatting with customizable whitespace handling.
   <br>
   Makes advanced String manipulations a piece of cake. 🦥
 </div>
@@ -65,7 +67,7 @@ npm i '@igor.dvlpr/magic-string'
 
 ## 🤹🏼 API
 
-### `constructor()` 
+### `constructor(): MagicString` 
 
 *Creates a new instance of MagicString.*
 
@@ -84,6 +86,26 @@ Returns the accumulator as a string.
 *Checks if the accumulator is empty.*  
 
 Returns true if the accumulator is empty, false otherwise.
+
+---
+
+### `clear(): MagicString`
+
+*Clears the accumulator.*
+
+Returns the current instance of MagicString.
+
+---
+
+### `append(value: StringValue): MagicString`
+
+*Appends a value to the accumulator.*
+
+`value` - The value to append.
+
+<br>
+
+Returns the current instance of MagicString.
 
 ---
 
