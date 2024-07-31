@@ -93,7 +93,7 @@ Returns true if the accumulator is empty, false otherwise.
 
 *Clears the accumulator.*
 
-Returns the current instance of MagicString.
+Returns the current instance of `MagicString`.
 
 ---
 
@@ -105,7 +105,7 @@ Returns the current instance of MagicString.
 
 <br>
 
-Returns the current instance of MagicString.
+Returns the current instance of `MagicString`.
 
 ---
 
@@ -117,7 +117,7 @@ Returns the current instance of MagicString.
 
 <br>
 
-Returns the current instance of MagicString.
+Returns the current instance of `MagicString`.
 
 ---
 
@@ -129,7 +129,7 @@ Returns the current instance of MagicString.
 
 <br>
 
-Returns the current instance of MagicString.
+Returns the current instance of `MagicString`.
 
 ---
 
@@ -139,7 +139,81 @@ Returns the current instance of MagicString.
 
 <br>
 
-Returns the current instance of MagicString.
+Returns the current instance of `MagicString`.
+
+---
+
+### `trim(): MagicString`
+
+*Trims only leading and trailing whitespace from the accumulator.*
+
+<br>
+
+Returns the current instance of `MagicString`.
+
+---
+
+### `trimOn(): MagicString`
+
+*Enables trimming of values before adding them to the accumulator.*
+
+<br>
+
+Returns the current instance of `MagicString`.
+
+---
+
+### `trimOff(): MagicString`
+
+*Disables trimming of values before adding them to the accumulator.*
+
+<br>
+
+Returns the current instance of `MagicString`.
+
+---
+
+### `path(value: StringValue): MagicString`
+
+*Appends a value representing a path to the accumulator, wrapping it in double quotes if necessary.*
+
+`value` - The path value to append.
+
+<br>
+
+Returns the current instance of `MagicString`.
+
+---
+
+### `prepend(value: StringValue): MagicString`
+
+*Prepends a value to the accumulator.*
+
+`value` - The value to prepend.
+
+<br>
+
+Returns the current instance of `MagicString`.
+
+---
+
+### `toLowerCase(): MagicString`
+
+*Converts the accumulator to lower case.*
+
+<br>
+
+Returns the current instance of `MagicString`.
+
+---
+
+### `toUpperCase(): MagicString`
+
+*Converts the accumulator to upper case.*
+
+<br>
+
+Returns the current instance of `MagicString`.
 
 ---
 
