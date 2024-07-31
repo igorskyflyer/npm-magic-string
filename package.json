@@ -1,7 +1,7 @@
 {
     "name": "@igor.dvlpr/magic-string",
     "version": "1.0.0",
-    "description": "🧵 Makes advanced String manipulations a piece of cake. 🦥",
+    "description": "🧵 An expressive, chainable library for advanced string manipulations. Supports appending, prepending, trimming, quoting, and path formatting with customizable whitespace handling. Makes advanced String manipulations a piece of cake. 🦥",
     "sideEffects": false,
     "engines": {
         "node": ">=20.0"
@@ -30,13 +30,13 @@
     "license": "MIT",
     "author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
     "funding": "https://ko-fi.com/igorskyflyer",
-    "homepage": "https://github.com/igorskyflyer/$repo",
+    "homepage": "https://github.com/igorskyflyer/npm-magic-string",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/igorskyflyer/$repo.git"
+        "url": "git+https://github.com/igorskyflyer/npm-magic-string.git"
     },
     "bugs": {
-        "url": "https://github.com/igorskyflyer/$repo/issues"
+        "url": "https://github.com/igorskyflyer/npm-magic-string/issues"
     },
     "devDependencies": {
         "@biomejs/biome": "^1.8.3",
