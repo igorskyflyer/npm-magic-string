@@ -1,7 +1,7 @@
 {
-    "name": "@igor.dvlpr/$pkg",
+    "name": "@igor.dvlpr/magic-string",
     "version": "1.0.0",
-    "description": "$desc",
+    "description": "🧵 Makes advanced String manipulations a piece of cake. 🦥",
     "sideEffects": false,
     "engines": {
         "node": ">=20.0"
@@ -16,7 +16,17 @@
         "debug": "vitest",
         "pub": "npm test && npm run build && npm publish --access public"
     },
-    "keywords": [$tags, "igorskyflyer", "igor.dvlpr"],
+    "keywords": [
+        "string",
+        "builder",
+        "advanced",
+        "append",
+        "chars",
+        "characters",
+        "concat",
+        "igorskyflyer",
+        "igor.dvlpr"
+    ],
     "license": "MIT",
     "author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
     "funding": "https://ko-fi.com/igorskyflyer",
