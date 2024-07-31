@@ -47,6 +47,7 @@
 
 - [Usage](#-usage)
 - [API](#-api)
+  - [StringValue](#type-stringvalue--string--string)
   - [constructor()](#constructor-magicstring)
   - [value](#value-string)
   - [isEmpty()](#isempty-boolean)
@@ -82,6 +83,12 @@ npm i '@igor.dvlpr/magic-string'
 <br>
 
 ## 🤹🏼 API
+
+All string-related methods accept a type of `StringValue` defined as:
+
+### `type StringValue = string | string[]`
+
+---
 
 ### `constructor(): MagicString` 
 
