@@ -3,7 +3,7 @@
 <br>
 
 <div align="center">
-  $desc
+  🧵 Makes advanced String manipulations a piece of cake. 🦥
 </div>
 
 <br>
@@ -54,7 +54,7 @@
 Install it by executing:
 
 ```shell
-npm i '@igor.dvlpr/$pkg'
+npm i '@igor.dvlpr/magic-string'
 ```
 
 <br>
@@ -67,7 +67,7 @@ npm i '@igor.dvlpr/$pkg'
 
 `example.ts`
 ```ts
-import {  } from '@igor.dvlpr/$pkg'
+import {  } from '@igor.dvlpr/magic-string'
 
 ```
 
