@@ -5,9 +5,9 @@
 <div align="center">
   🧵 An expressive, chainable library for advanced string manipulations.
   <br>
-  Supports appending, prepending, trimming, quoting,
+  Supports appending, prepending, trimming, quoting, and path
   <br>
-  and path formatting with customizable whitespace handling.
+  formatting with customizable whitespace handling.
   <br>
   Makes advanced String manipulations a piece of cake. 🦥
 </div>
