@@ -120,7 +120,7 @@ export class MagicString {
    * @param value - The value to append.
    * @returns Returns the current instance of MagicString.
    */
-  singleQuoted(value: StringValue): MagicString {
+  appendSingleQuoted(value: StringValue): MagicString {
     return this.#wrapString(value, "'")
   }
 
@@ -129,7 +129,7 @@ export class MagicString {
    * @param value - The value to append.
    * @returns Returns the current instance of MagicString.
    */
-  quoted(value: StringValue): MagicString {
+  appendQuoted(value: StringValue): MagicString {
     return this.#wrapString(value, '"')
   }
 
