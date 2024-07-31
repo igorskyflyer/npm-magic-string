@@ -87,25 +87,33 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 
 ## 🧬 Related
 
-[]()
+[@igor.dvlpr/extendable-string](https://www.npmjs.com/package/@igor.dvlpr/extendable-string)
 
-> __
+> _🦀 ExtendableString allows you to create strings on steroids that have custom transformations applied to them, unlike common, plain strings. 🪀_
 
-[]()
+<br>
 
-> __
+[@igor.dvlpr/str-is-in](https://www.npmjs.com/package/@igor.dvlpr/str-is-in)
 
-[]()
+> _🧵 Provides ways of checking whether a String is present in an Array of Strings using custom Comparators. 🔍_
 
-> __
+<br>
 
-[]()
+[@igor.dvlpr/normalized-string](https://www.npmjs.com/package/@igor.dvlpr/normalized-string)
 
-> __
+> _💊 NormalizedString provides you with a String type with consistent line-endings, guaranteed. 📮_
 
-[]()
+<br>
 
-> __
+[@igor.dvlpr/astro-escaped-component](https://www.npmjs.com/package/@igor.dvlpr/astro-escaped-component)
+
+> _🏃🏻‍♂️‍➡️ An Astro component that holds only HTML-encoded content. 📜_
+
+<br>
+
+[@igor.dvlpr/strip-html](https://www.npmjs.com/package/@igor.dvlpr/strip-html)
+
+> _🥞 Removes HTML code from the given string. Can even extract text-only from the given an HTML string. ✨_
 
 ---
 
