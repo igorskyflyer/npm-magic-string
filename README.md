@@ -61,14 +61,28 @@ npm i '@igor.dvlpr/magic-string'
 
 ## 🤹🏼 API
 
+### `constructor()` 
+
+*Creates a new instance of MagicString.*
+
+---
+
+### `isEmpty(): boolean`
+
+*Checks if the accumulator is empty.*  
+
+Returns true if the accumulator is empty, false otherwise.
+
 ---
 
 ## ✨ Examples
 
 `example.ts`
 ```ts
-import {  } from '@igor.dvlpr/magic-string'
+import { MagicString } from '@igor.dvlpr/magic-string'
 
+
+console.log(new MagicString())
 ```
 
 ---
