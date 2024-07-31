@@ -1,4 +1,4 @@
-<h1 align="center">$project</h1>
+<h1 align="center">MagicString</h1>
 
 <br>
 
