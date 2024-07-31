@@ -247,7 +247,26 @@ Returns the current instance of `MagicString`.
 import { MagicString } from '@igor.dvlpr/magic-string'
 
 
-console.log(new MagicString())
+console.log(
+  new MagicString()
+    .append('Hello')
+    .appendSingleQuoted('world')
+    .appendQuoted('this is     a test')
+    .prepend('Start:    ')
+    .trimAll()
+    .path('/usr/local/bin')
+    .toUpperCase()
+    .path('/usr/local/my file.txt')
+    .toLowerCase()
+    .toUpperCase()
+    .trimOn()
+    .append('   Trimmed   ')
+    .trimOff()
+    .append('  Not trimmed')
+    .trim().value
+)
+
+// prints 'START: HELLO \'WORLD\' "THIS IS A TEST" /USR/LOCAL/BIN "/USR/LOCAL/MY FILE.TXT" Trimmed   Not trimmed'
 ```
 
 ---
