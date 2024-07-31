@@ -71,6 +71,14 @@ npm i '@igor.dvlpr/magic-string'
 
 ---
 
+### `value: string`
+
+*Gets the accumulator value.*
+
+Returns the accumulator as a string.
+
+---
+
 ### `isEmpty(): boolean`
 
 *Checks if the accumulator is empty.*  
