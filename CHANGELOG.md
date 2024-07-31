@@ -1,6 +1,6 @@
 ## 📒 Changelog
 
-### of [@igor.dvlpr/$pkg](https://github.com/igorskyflyer/$repo)
+### of [@igor.dvlpr/easy-string](https://github.com/igorskyflyer/$repo)
 
 <br>
 
