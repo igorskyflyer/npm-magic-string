@@ -3,7 +3,11 @@
 <br>
 
 <div align="center">
-  🧵 An expressive, chainable library for advanced string manipulations. Supports appending, prepending, trimming, quoting, and path formatting with customizable whitespace handling. Makes advanced String manipulations a piece of cake. 🦥
+  🧵 An expressive, chainable library for advanced string manipulations.
+  <br>
+  Supports appending, prepending, trimming, quoting, and path formatting with customizable whitespace handling.
+  <br>
+  Makes advanced String manipulations a piece of cake. 🦥
 </div>
 
 <br>
