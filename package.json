@@ -13,7 +13,7 @@
     "scripts": {
         "build": "tsc",
         "test": "vitest --run",
-        "debug": "vitest",
+        "debug": "tsc --sourceMap --watch",
         "pub": "npm test && npm run build && npm publish --access public"
     },
     "keywords": [
