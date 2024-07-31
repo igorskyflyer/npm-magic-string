@@ -216,10 +216,10 @@ export class MagicString {
   }
 
   /**
-   * Converts the accumulator to a string.
+   * Gets the accumulator value.
    * @returns Returns the accumulator as a string.
    */
-  toString(): string {
+  value(): string {
     return this.#accumulator
   }
 }
