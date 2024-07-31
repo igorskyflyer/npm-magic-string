@@ -7,10 +7,10 @@
   <br>
   Supports appending, prepending, trimming, quoting, and
   <br>
-  path formatting with customizable whitespace handling.
+  path formatting with customizable whitespace handling. 🦥
   <br>
   <br>
-  <em>Makes advanced String manipulations a piece of cake.</em> 🦥
+  <em>Makes advanced String manipulations a piece of cake.</em>
 </div>
 
 <br>
