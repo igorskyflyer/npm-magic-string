@@ -219,7 +219,7 @@ export class MagicString {
    * Gets the accumulator value.
    * @returns Returns the accumulator as a string.
    */
-  value(): string {
+  get value(): string {
     return this.#accumulator
   }
 }
