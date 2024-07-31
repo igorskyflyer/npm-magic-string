@@ -256,7 +256,7 @@ console.log(
     .trimAll()
     .path('/usr/local/bin')
     .toUpperCase()
-    .path('/usr/local/my file.txt')
+    .path('/usr/local/my file.txt"') // intentional stray quote
     .toLowerCase()
     .toUpperCase()
     .trimOn()
