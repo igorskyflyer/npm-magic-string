@@ -46,6 +46,7 @@
 
 - [Usage](#-usage)
 - [API](#-api)
+  - [constructor()](#constructor-magicstring)
   - [value](#value-string)
   - [isEmpty()](#isempty-boolean)
   - [clear()](#clear-magicstring)
