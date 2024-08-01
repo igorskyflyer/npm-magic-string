@@ -3,7 +3,7 @@
 <br>
 
 <div align="center">
-  🧵 An expressive, chainable library for advanced string manipulations.
+  🧵 An expressive and chainable library for advanced string manipulations.
   <br>
   Supports appending, prepending, trimming, quoting, and
   <br>
