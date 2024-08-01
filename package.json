@@ -1,7 +1,7 @@
 {
     "name": "@igor.dvlpr/magic-string",
     "version": "1.0.0",
-    "description": "🧵 An expressive, chainable library for advanced string manipulations. Supports appending, prepending, trimming, quoting, and path formatting with customizable whitespace handling. Makes advanced String manipulations a piece of cake. 🦥",
+    "description": "🧵 An expressive and chainable library for advanced string manipulations. Supports appending, prepending, trimming, quoting, and path formatting with customizable whitespace handling. Makes advanced String manipulations a piece of cake. 🦥",
     "sideEffects": false,
     "engines": {
         "node": ">=20.0"
