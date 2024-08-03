@@ -124,7 +124,12 @@ describe('🧪 MagicString tests 🧪', () => {
 
   suite('appendIf()', () => {
     it('should not append anything', () => {
-      magicString.appendIf('Hello')
+      magicString.appendIf('Hello', '', '')
+      expect(magicString.value).toBe('')
+    })
+
+    it('should not append anything', () => {
+      magicString.appendIf('Hello', ['', ''])
       expect(magicString.value).toBe('')
     })
 
