@@ -76,9 +76,6 @@
 - [Related](#-related)
 - [Author](#-author)
 
-<br>
-<br>
-
 ---
 
 ## 🤖 Features
