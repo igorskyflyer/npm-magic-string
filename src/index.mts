@@ -145,7 +145,7 @@ export class MagicString {
   }
 
   /**
-   * Conditionally appends a value to the accumulator if followed by other non-empty values.
+   * Conditionally appends values to the accumulator only if the primary value is followed by other non-empty values.
    *
    * This method checks if the provided rest values are non-empty before appending them.
    * Supports passing multiple string values as rest parameters or a single array of strings.
