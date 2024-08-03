@@ -46,6 +46,7 @@
 ## 📃 Table of contents
 
 - [Features](#-features)
+- [Usage](#-usage)
 - [API](#-api)
   - [StringValue](#type-stringvalue--string--string)
   - [constructor()](#constructorinitialvalue-stringvalue)
