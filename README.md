@@ -305,6 +305,19 @@ Returns the current instance of `MagicString`.
 
 ---
 
+### `replace(searchValue: string, replaceValue: string): MagicString`
+
+*Replaces occurrences of a substring in the accumulator with a new substring.*  
+
+`searchValue` - The substring to search for.  
+`replaceValue` - The substring to replace with.
+
+<br>
+
+Returns the current instance of `MagicString`.
+
+---
+
 ## ✨ Examples
 
 `example.mts`
