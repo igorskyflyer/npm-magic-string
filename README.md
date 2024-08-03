@@ -45,10 +45,10 @@
 
 ## 📃 Table of contents
 
-- [Usage](#-usage)
+- [Features](#-features)
 - [API](#-api)
   - [StringValue](#type-stringvalue--string--string)
-  - [constructor()](#constructor-magicstring)
+  - [constructor()](#constructorinitialvalue-stringvalue-magicstring)
   - [value](#value-string)
   - [isEmpty()](#isempty-boolean)
   - [clear()](#clear-magicstring)
@@ -72,6 +72,14 @@
 <br>
 <br>
 
+## 🤖 Features
+
+- 🗣️ expressive and chainable
+- 📃 with many string manipulation methods
+- 🤖 increases productiveness
+
+---
+
 ## 🕵🏼 Usage
 
 Install it by executing:
@@ -80,7 +88,7 @@ Install it by executing:
 npm i '@igor.dvlpr/magic-string'
 ```
 
-<br>
+---
 
 ## 🤹🏼 API
 
@@ -90,9 +98,17 @@ All string-related methods use a common string type that can either be a string 
 
 ---
 
-### `constructor(): MagicString` 
+### `constructor(initialValue?: StringValue): MagicString` 
 
 *Creates a new instance of MagicString.*
+
+`initialValue` - Optional, the initial value to assign to the accumulator.
+
+<br>
+
+> [!NOTE]
+> The value is assigned to the accumulator as-is, no processing is performed.
+>
 
 ---
 
@@ -242,7 +258,7 @@ Returns the current instance of `MagicString`.
 
 ## ✨ Examples
 
-`example.ts`
+`example.mts`
 ```ts
 import { MagicString } from '@igor.dvlpr/magic-string'
 
@@ -314,8 +330,6 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 > _🥞 Removes HTML code from the given string. Can even extract text-only from the given an HTML string. ✨_
 
 ---
-
-<br>
 
 ## 👨🏻‍💻 Author
 Created by **Igor Dimitrijević** ([*@igorskyflyer*](https://github.com/igorskyflyer/)).
