@@ -8,7 +8,7 @@
 
 <p align="right"><em>03-Aug-2024</em></p>
 
-- **🪅 feat**: add [`appendIf()`](https://github.com/igorskyflyer/npm-magic-string#appendifvalue-stringvalue-rest-stringvalue), a conditional appending method
+- **🪅 feat**: add [`appendIf()`](https://github.com/igorskyflyer/npm-magic-string#appendifvalue-stringvalue-rest-stringvalue) - a conditional appending method
 - **🪅 feat**: add [`trimStart()`](https://github.com/igorskyflyer/npm-magic-string#trimstart)
 - **🪅 feat**: add [`trimEnd()`](https://github.com/igorskyflyer/npm-magic-string#trimend)
 - **🪅 feat**: add [`replace()`](https://github.com/igorskyflyer/npm-magic-string#replacesearchvalue-string-replacevalue-string)
