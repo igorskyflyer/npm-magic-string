@@ -241,6 +241,26 @@ Returns the current instance of `MagicString`.
 
 ---
 
+### `trimStart(): MagicString`
+
+*Trims only leading whitespace from the accumulator.*
+
+<br>
+
+Returns the current instance of `MagicString`.
+
+---
+
+### `trimEnd(): MagicString`
+
+*Trims only trailing whitespace from the accumulator.*
+
+<br>
+
+Returns the current instance of `MagicString`.
+
+---
+
 ### `path(value: StringValue): MagicString`
 
 *Appends a value representing a path to the accumulator, wrapping it in double quotes if necessary.*
