@@ -233,11 +233,19 @@ export class MagicString {
     return this
   }
 
+  /**
+   * Trims only leading whitespace from the accumulator.
+   * @returns Returns the current instance of MagicString.
+   */
   trimStart(): MagicString {
     this.#accumulator = this.#accumulator.trimStart()
     return this
   }
 
+  /**
+   * Trims only trailing whitespace from the accumulator.
+   * @returns Returns the current instance of MagicString.
+   */
   trimEnd(): MagicString {
     this.#accumulator = this.#accumulator.trimEnd()
     return this
