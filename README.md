@@ -85,6 +85,9 @@
 - 📃 with many string manipulation methods
 - 👽 increases productiveness
 
+<br>
+<br>
+
 ---
 
 ## 🕵🏼 Usage
@@ -333,7 +336,9 @@ Returns the current instance of `MagicString`.
 
 *If the `index` is negative or zero, the value is prepended.*  
 
-*If the `index` is greater than or equal to the length of the current accumulator, the value is appended.*  
+*If the `index` is greater than or equal to the length of the current accumulator, the value is appended.*
+
+<br>
 
 `value` - The value to insert.  
 
