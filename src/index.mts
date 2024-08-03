@@ -24,11 +24,12 @@ export class MagicString {
    * The value is assigned to the accumulator as-is, no processing is performed.
    */
   constructor(initialValue?: StringValue) {
-    this.#accumulator = ''
     this.#shouldTrim = false
 
     if (initialValue) {
       this.#accumulator = this.#makeValue(initialValue)
+    } else {
+      this.#accumulator = ''
     }
   }
 
