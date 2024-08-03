@@ -68,7 +68,7 @@ export class MagicString {
     return this.#accumulator.at(-1) || ''
   }
 
-  #wrapString(value: StringValue, wrapChar?: string): MagicString {
+  addToAccumulator(value: StringValue, wrapChar?: string): MagicString {
     value = this.#makeValue(value)
 
     if (!this.isEmpty() && this.#lastChar() !== ' ') {
@@ -123,7 +123,7 @@ export class MagicString {
    * @returns Returns the current instance of MagicString.
    */
   append(value: StringValue): MagicString {
-    return this.#wrapString(value)
+    return this.addToAccumulator(value)
   }
 
   /**
@@ -132,7 +132,7 @@ export class MagicString {
    * @returns Returns the current instance of MagicString.
    */
   appendSingleQuoted(value: StringValue): MagicString {
-    return this.#wrapString(value, "'")
+    return this.addToAccumulator(value, "'")
   }
 
   /**
@@ -141,7 +141,7 @@ export class MagicString {
    * @returns Returns the current instance of MagicString.
    */
   appendQuoted(value: StringValue): MagicString {
-    return this.#wrapString(value, '"')
+    return this.addToAccumulator(value, '"')
   }
 
   /**
@@ -188,10 +188,10 @@ export class MagicString {
     value = this.#makeValue(value)
 
     if (value.indexOf(' ') > -1) {
-      return this.#wrapString(value, '"')
+      return this.addToAccumulator(value, '"')
     }
 
-    return this.#wrapString(value)
+    return this.addToAccumulator(value)
   }
 
   /**
