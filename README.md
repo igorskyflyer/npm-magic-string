@@ -48,21 +48,21 @@
 - [Features](#-features)
 - [API](#-api)
   - [StringValue](#type-stringvalue--string--string)
-  - [constructor()](#constructorinitialvalue-stringvalue-magicstring)
+  - [constructor()](#constructorinitialvalue-stringvalue)
   - [value](#value-string)
   - [isEmpty()](#isempty-boolean)
-  - [clear()](#clear-magicstring)
-  - [append()](#appendvalue-stringvalue-magicstring)
-  - [appendSingleQuoted()](#appendsinglequotedvalue-stringvalue-magicstring)
-  - [appendQuoted()](#appendquotedvalue-stringvalue-magicstring)
-  - [trimAll()](#trimall-magicstring)
-  - [trim()](#trim-magicstring)
-  - [trimOn()](#trimon-magicstring)
-  - [trimOff()](#trimoff-magicstring)
-  - [path()](#pathvalue-stringvalue-magicstring)
-  - [prepend()](#prependvalue-stringvalue-magicstring)
-  - [toLowerCase()](#tolowercase-magicstring)
-  - [toUpperCase()](#touppercase-magicstring)
+  - [clear()](#clear)
+  - [append()](#appendvalue-stringvalue)
+  - [appendSingleQuoted()](#appendsinglequotedvalue-stringvalue)
+  - [appendQuoted()](#appendquotedvalue-stringvalue)
+  - [trimAll()](#trimall)
+  - [trim()](#trim)
+  - [trimOn()](#trimon)
+  - [trimOff()](#trimoff)
+  - [path()](#pathvalue-stringvalue)
+  - [prepend()](#prependvalue-stringvalue)
+  - [toLowerCase()](#tolowercase)
+  - [toUpperCase()](#touppercase)
 - [Examples](#-examples)
 - [Changelog](#-changelog)
 - [License](#-license)
@@ -98,7 +98,7 @@ All string-related methods use a common string type that can either be a string 
 
 ---
 
-### `constructor(initialValue?: StringValue): MagicString` 
+### `constructor(initialValue?: StringValue)` 
 
 *Creates a new instance of MagicString.*
 
@@ -140,7 +140,7 @@ Returns true if the accumulator is empty, false otherwise.
 
 ---
 
-### `clear(): MagicString`
+### `clear()`
 
 *Clears the accumulator.*
 
@@ -148,7 +148,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `append(value: StringValue): MagicString`
+### `append(value: StringValue)`
 
 *Appends a value to the accumulator.*
 
@@ -160,7 +160,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `appendIf(value: StringValue, ...rest: StringValue[]): MagicString`
+### `appendIf(value: StringValue, ...rest: StringValue[])`
 
 *Conditionally appends a value to the accumulator if followed by other non-empty values.*  
 
@@ -169,6 +169,7 @@ Returns the current instance of `MagicString`.
 *Supports passing multiple string values as rest parameters or a single array of strings.*  
 
 `value` - The primary value to append.  
+
 `rest` - Additional values to check and append.
 
 <br>
@@ -177,7 +178,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `appendSingleQuoted(value: StringValue): MagicString`
+### `appendSingleQuoted(value: StringValue)`
 
 *Appends a single-quoted value to the accumulator.*
 
@@ -189,7 +190,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `appendQuoted(value: StringValue): MagicString`
+### `appendQuoted(value: StringValue)`
 
 *Appends a double-quoted value to the accumulator.*
 
@@ -201,7 +202,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `trimAll(): MagicString`
+### `trimAll()`
 
 *Trims all whitespace in the accumulator.*
 
@@ -211,7 +212,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `trim(): MagicString`
+### `trim()`
 
 *Trims only leading and trailing whitespace from the accumulator.*
 
@@ -221,7 +222,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `trimOn(): MagicString`
+### `trimOn()`
 
 *Enables trimming of values before adding them to the accumulator.*
 
@@ -231,7 +232,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `trimOff(): MagicString`
+### `trimOff()`
 
 *Disables trimming of values before adding them to the accumulator.*
 
@@ -241,7 +242,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `trimStart(): MagicString`
+### `trimStart()`
 
 *Trims only leading whitespace from the accumulator.*
 
@@ -251,7 +252,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `trimEnd(): MagicString`
+### `trimEnd()`
 
 *Trims only trailing whitespace from the accumulator.*
 
@@ -261,7 +262,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `path(value: StringValue): MagicString`
+### `path(value: StringValue)`
 
 *Appends a value representing a path to the accumulator, wrapping it in double quotes if necessary.*
 
@@ -273,7 +274,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `prepend(value: StringValue): MagicString`
+### `prepend(value: StringValue)`
 
 *Prepends a value to the accumulator.*
 
@@ -285,7 +286,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `toLowerCase(): MagicString`
+### `toLowerCase()`
 
 *Converts the accumulator to lower case.*
 
@@ -295,7 +296,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `toUpperCase(): MagicString`
+### `toUpperCase()`
 
 *Converts the accumulator to upper case.*
 
@@ -305,12 +306,45 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `replace(searchValue: string, replaceValue: string): MagicString`
+### `replace(searchValue: string, replaceValue: string)`
 
 *Replaces occurrences of a substring in the accumulator with a new substring.*  
 
 `searchValue` - The substring to search for.  
+
 `replaceValue` - The substring to replace with.
+
+<br>
+
+Returns the current instance of `MagicString`.
+
+---
+
+### `insert(value: StringValue, index: number)`
+
+*Inserts a value at a specified index in the accumulator.*  
+
+*If the `index` is negative or zero, the value is prepended.*  
+
+*If the `index` is greater than or equal to the length of the current accumulator, the value is appended.*  
+
+`value` - The value to insert.  
+
+`index` - The position at which to insert the value.
+
+<br>
+
+Returns the current instance of `MagicString`.
+
+---
+
+### `substring(start: number, end?: number)`
+
+*Extracts a substring from the accumulator between specified indices.*  
+
+`start` - The starting index of the substring.  
+
+`end` - The ending index of the substring (optional).
 
 <br>
 
