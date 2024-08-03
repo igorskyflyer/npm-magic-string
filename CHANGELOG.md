@@ -4,6 +4,26 @@
 
 <br>
 
+## v1.2.0
+
+<p align="right"><em>03-Aug-2024</em></p>
+
+- **🪅 feat**: add [`appendIf()`](./README.md#), a conditional appending method
+- **🪅 feat**: add [`trimStart()`](./README.md#)
+- **🪅 feat**: add [`trimEnd()`](./README.md#)
+- **🪅 feat**: add [`replace()`](./README.md#)
+- **🪅 feat**: add [`insert()`](./README.md#)
+- **🪅 feat**: add [`substring()`](./README.md#)
+- **🪅 feat**: add [`length`](./README.md#)
+
+<br>
+
+- **✅ fix**: remove empty values from a passed [`StringValue`](./README.md#type-stringvalue--string--string)
+- **✅ fix**: don't append empty values with [`append()`](./README.md#appendvalue-stringvalue-magicstring)
+
+<br>
+<br>
+
 ## v1.1.0
 
 <p align="right"><em>03-Aug-2024</em></p>
