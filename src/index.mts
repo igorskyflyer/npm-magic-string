@@ -19,10 +19,17 @@ export class MagicString {
 
   /**
    * Creates a new instance of MagicString.
+   * @param initialValue The initial value to assign to the accumulator.
+   *
+   * The value is assigned to the accumulator as-is, no processing is performed.
    */
-  constructor() {
+  constructor(initialValue?: StringValue) {
     this.#accumulator = ''
     this.#shouldTrim = false
+
+    if (initialValue) {
+      this.#accumulator = this.#makeValue(initialValue)
+    }
   }
 
   #trimAccumulator(): MagicString {
