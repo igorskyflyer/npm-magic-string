@@ -43,6 +43,12 @@ export class MagicString {
       return ''
     }
 
+    array = array.filter((value) => value.length > 0)
+
+    if (array.length === 0) {
+      return ''
+    }
+
     if (this.#shouldTrim) {
       array = array.map((value) => value.trim())
     }
@@ -70,6 +76,10 @@ export class MagicString {
 
   addToAccumulator(value: StringValue, wrapChar?: string): MagicString {
     value = this.#makeValue(value)
+
+    if (value.length === 0) {
+      return this
+    }
 
     if (!this.isEmpty() && this.#lastChar() !== ' ') {
       this.#accumulator += ' '
@@ -100,6 +110,10 @@ export class MagicString {
     return this.#accumulator
   }
 
+  get length(): number {
+    return this.#accumulator.length
+  }
+
   /**
    * Checks if the accumulator is empty.
    * @returns Returns true if the accumulator is empty, false otherwise.
@@ -124,6 +138,42 @@ export class MagicString {
    */
   append(value: StringValue): MagicString {
     return this.addToAccumulator(value)
+  }
+
+  /**
+   * Conditionally appends a value to the accumulator if followed by other non-empty values.
+   *
+   * This method checks if the provided rest values are non-empty before appending them.
+   * Supports passing multiple string values as rest parameters or a single array of strings.
+   *
+   * @param value - The primary value to append.
+   * @param rest - Additional values to check and append.
+   * @returns Returns the current instance of MagicString.
+   */
+  appendIf(value: StringValue, ...rest: StringValue[]): MagicString {
+    if (!(value && Array.isArray(rest))) {
+      return this
+    }
+
+    // single string array
+    if (rest.length === 1 && Array.isArray(rest.at(0))) {
+      const additional: string = this.#arrayToString(rest.at(0) as string[])
+
+      if (additional.length === 0) {
+        return this
+      }
+
+      return this.append(value).append(additional)
+    }
+
+    // rest params
+    const additional: string = this.#arrayToString(rest as string[])
+
+    if (additional.length === 0) {
+      return this
+    }
+
+    return this.append(value).append(additional)
   }
 
   /**
@@ -179,6 +229,16 @@ export class MagicString {
     return this
   }
 
+  trimStart(): MagicString {
+    this.#accumulator = this.#accumulator.trimStart()
+    return this
+  }
+
+  trimEnd(): MagicString {
+    this.#accumulator = this.#accumulator.trimEnd()
+    return this
+  }
+
   /**
    * Appends a value representing a path to the accumulator, wrapping it in double quotes if necessary.
    * @param value - The path value to append.
@@ -229,6 +289,40 @@ export class MagicString {
    */
   toUpperCase(): MagicString {
     this.#accumulator = this.#accumulator.toUpperCase()
+    return this
+  }
+
+  replace(searchValue: string, replaceValue: string): MagicString {
+    this.#accumulator = this.#accumulator.replace(searchValue, replaceValue)
+    return this
+  }
+
+  insert(value: StringValue, index: number): MagicString {
+    if (typeof index !== 'number') {
+      return this
+    }
+
+    value = this.#makeValue(value)
+
+    if (value.length === 0) {
+      return this
+    }
+
+    if (index <= 0) {
+      return this.prepend(value)
+    }
+
+    if (index >= this.length) {
+      return this.append(value)
+    }
+
+    this.#accumulator = `${this.#accumulator.slice(0, index)}${value}${this.#accumulator.slice(index)}`
+
+    return this
+  }
+
+  substring(start: number, end?: number): MagicString {
+    this.#accumulator = this.#accumulator.substring(start, end)
     return this
   }
 }
