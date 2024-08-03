@@ -79,6 +79,8 @@
 <br>
 <br>
 
+---
+
 ## 🤖 Features
 
 - 🗣️ expressive and chainable
