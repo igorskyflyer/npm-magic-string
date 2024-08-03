@@ -116,7 +116,19 @@ All string-related methods use a common string type that can either be a string 
 
 *Gets the accumulator value.*
 
+<br>
+
 Returns the accumulator as a string.
+
+---
+
+### `length: number`
+
+*Gets the length of the accumulator.*
+
+<br>
+
+Returns the length of the accumulator.
 
 ---
 
@@ -141,6 +153,23 @@ Returns the current instance of `MagicString`.
 *Appends a value to the accumulator.*
 
 `value` - The value to append.
+
+<br>
+
+Returns the current instance of `MagicString`.
+
+---
+
+### `appendIf(value: StringValue, ...rest: StringValue[]): MagicString`
+
+*Conditionally appends a value to the accumulator if followed by other non-empty values.*  
+
+*This method checks if the provided rest values are non-empty before appending them.*  
+
+*Supports passing multiple string values as rest parameters or a single array of strings.*  
+
+`value` - The primary value to append.  
+`rest` - Additional values to check and append.
 
 <br>
 
