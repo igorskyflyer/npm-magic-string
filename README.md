@@ -160,7 +160,7 @@ Returns the current instance of `MagicString`.
 
 ---
 
-### `appendIf(value: StringValue, ...rest: StringValue[]): MagicString`
+### appendIf(value: StringValue, ...rest: StringValue[]): MagicString
 
 *Conditionally appends a value to the accumulator if followed by other non-empty values.*  
 
