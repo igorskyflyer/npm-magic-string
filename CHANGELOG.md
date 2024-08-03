@@ -19,7 +19,7 @@
 <br>
 
 - **✅ fix**: remove empty values from a passed [`StringValue`](https://github.com/igorskyflyer/npm-magic-string#type-stringvalue--string--string)
-- **✅ fix**: don't append empty values with [`append()`](https://github.com/igorskyflyer/npm-magic-string#appendvalue-stringvalue)
+- **✅ fix**: don't append empty values with [`append()`](https://github.com/igorskyflyer/npm-magic-string#appendvalue-stringvalue), [`appendIf()`](https://github.com/igorskyflyer/npm-magic-string#appendifvalue-stringvalue-rest-stringvalue) and [`insert()`](https://github.com/igorskyflyer/npm-magic-string#insertvalue-stringvalue-index-number)
 
 <br>
 <br>
