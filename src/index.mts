@@ -110,6 +110,10 @@ export class MagicString {
     return this.#accumulator
   }
 
+  /**
+   * Gets the length of the accumulator.
+   * @returns Returns the length of the accumulator.
+   */
   get length(): number {
     return this.#accumulator.length
   }
