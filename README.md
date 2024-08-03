@@ -76,7 +76,7 @@
 
 - 🗣️ expressive and chainable
 - 📃 with many string manipulation methods
-- 🤖 increases productiveness
+- 👽 increases productiveness
 
 ---
 
