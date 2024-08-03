@@ -169,7 +169,7 @@ Returns the current instance of `MagicString`.
 
 ### `appendIf(value: StringValue, ...rest: StringValue[])`
 
-*Conditionally appends a value to the accumulator if followed by other non-empty values.*  
+*Conditionally appends values to the accumulator only if the primary value is followed by other non-empty values.*  
 
 *This method checks if the provided rest values are non-empty before appending them.*  
 
