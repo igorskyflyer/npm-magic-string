@@ -304,11 +304,28 @@ export class MagicString {
     return this
   }
 
+  /**
+   * Replaces occurrences of a substring in the accumulator with a new substring.
+   * @param searchValue - The substring to search for.
+   * @param replaceValue - The substring to replace with.
+   * @returns Returns the current instance of MagicString.
+   */
   replace(searchValue: string, replaceValue: string): MagicString {
     this.#accumulator = this.#accumulator.replace(searchValue, replaceValue)
     return this
   }
 
+  /**
+   * Inserts a value at a specified index in the accumulator.
+   *
+   * If the `index` is negative or zero, the value is prepended.
+   *
+   * If the `index` is greater than or equal to the length of the current accumulator, the value is appended.
+   *
+   * @param value - The value to insert.
+   * @param index - The position at which to insert the value.
+   * @returns Returns the current instance of MagicString.
+   */
   insert(value: StringValue, index: number): MagicString {
     if (typeof index !== 'number') {
       return this
@@ -333,6 +350,12 @@ export class MagicString {
     return this
   }
 
+  /**
+   * Extracts a substring from the accumulator between specified indices.
+   * @param start - The starting index of the substring.
+   * @param end - The ending index of the substring (optional).
+   * @returns Returns the current instance of MagicString.
+   */
   substring(start: number, end?: number): MagicString {
     this.#accumulator = this.#accumulator.substring(start, end)
     return this
