@@ -85,10 +85,9 @@
 - 📃 with many string manipulation methods
 - 👽 increases productiveness
 
-<br>
-<br>
-
 ---
+
+<br>
 
 ## 🕵🏼 Usage
 
