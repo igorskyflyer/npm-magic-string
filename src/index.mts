@@ -1,5 +1,7 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
+import { scrambleString } from '@igor.dvlpr/scramble'
+
 /**
  * A common string type for all string-related methods that can either be a string or a string array.
  */
@@ -358,6 +360,21 @@ export class MagicString {
    */
   substring(start: number, end?: number): MagicString {
     this.#accumulator = this.#accumulator.substring(start, end)
+    return this
+  }
+
+  /**
+   * Scrambles (rearranges characters randomly) of the current accumulator.
+   *
+   * Requires that the current accumulator value has a `length` > 3.
+   *
+   * @returns Returns the current instance of MagicString.
+   */
+  scramble(): MagicString {
+    if (this.length > 3) {
+      this.#accumulator = scrambleString(this.#accumulator)
+    }
+
     return this
   }
 }
