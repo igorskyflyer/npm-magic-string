@@ -71,6 +71,7 @@
   - [replace()](#replacesearchvalue-string-replacevalue-string)
   - [insert()](#insertvalue-stringvalue-index-number)
   - [substring()](#substringstart-number-end-number)
+  - [scramble()](#scramble)
 - [Examples](#-examples)
 - [Changelog](#-changelog)
 - [License](#-license)
@@ -354,6 +355,18 @@ Returns the current instance of `MagicString`.
 `start` - The starting index of the substring.  
 
 `end` - The ending index of the substring (optional).
+
+<br>
+
+Returns the current instance of `MagicString`.
+
+---
+
+### `scramble()`
+
+*Scrambles (rearranges characters randomly) of the current accumulator.*  
+   
+*Requires that the current accumulator value has a `length` > 3.*
 
 <br>
 
