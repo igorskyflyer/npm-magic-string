@@ -184,4 +184,15 @@ describe('🧪 MagicString tests 🧪', () => {
       expect(magicString.value).toBe('Lorem ipsum dolor')
     })
   })
+
+  suite('scramble()', () => {
+    it('should not match the original string', () => {
+      const input: string =
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+      magicString.append(input).scramble()
+
+      expect(magicString.value).not.toBe(input)
+      expect(magicString.value).toHaveLength(input.length)
+    })
+  })
 })
