@@ -1,34 +1,53 @@
 {
-    "name": "@igor.dvlpr/magic-string",
-    "version": "1.2.0",
+    "name": "@igorskyflyer/magic-string",
+    "version": "1.3.0",
     "description": "🧵 An expressive and chainable library for advanced string manipulations. Supports appending, prepending, trimming, quoting, and path formatting with customizable whitespace handling. Makes advanced String manipulations a piece of cake. 🦥",
     "sideEffects": false,
     "engines": {
-        "node": ">=20.0"
+        "node": ">=22.0"
     },
-    "types": "./dist/index.d.mts",
-    "main": "./dist/index.mjs",
-    "module": "./dist/index.mjs",
-    "files": ["dist/*.mjs", "dist/*.d.mts"],
+    "type": "module",
+    "types": "./dist/index.d.ts",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "build": "tsc",
         "test": "vitest --run",
-        "dev": "tsc --sourceMap --watch",
-        "pub": "npm test && npm run build && npm publish --access public"
+        "pub": "pnpm test && git push origin main --tags"
     },
     "keywords": [
         "string",
-        "builder",
-        "advanced",
+        "string-builder",
+        "string-utils",
+        "string-manipulation",
+        "string-operations",
+        "string-formatter",
+        "string-helper",
+        "string-tools",
+        "string-utility",
+        "string-processing",
+        "string-transform",
+        "string-chaining",
+        "chainable-api",
+        "text-utils",
+        "text-manipulation",
+        "text-processing",
         "append",
-        "chars",
-        "characters",
-        "concat",
-        "igorskyflyer",
-        "igor.dvlpr"
+        "prepend",
+        "trim",
+        "quote",
+        "path-formatting",
+        "scramble",
+        "typescript",
+        "javascript",
+        "igor dimitrijević",
+        "igorskyflyer"
     ],
     "license": "MIT",
-    "author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
+    "author": "Igor Dimitrijević <support@igorskyflyer.me> (https://github.com/igorskyflyer)",
     "funding": "https://ko-fi.com/igorskyflyer",
     "homepage": "https://github.com/igorskyflyer/npm-magic-string",
     "repository": {
@@ -38,14 +57,18 @@
     "bugs": {
         "url": "https://github.com/igorskyflyer/npm-magic-string/issues"
     },
-    "devDependencies": {
-        "@biomejs/biome": "^1.8.3",
-        "@igor.dvlpr/biome-config-igorskyflyer": "^1.0.3",
-        "@types/node": "^20.14.14",
-        "typescript": "^5.5.4",
-        "vitest": "^2.0.5"
-    },
     "dependencies": {
-        "@igor.dvlpr/scramble": "^1.0.0"
-    }
+        "@igorskyflyer/scramble": "^1.1.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.2",
+        "@igorskyflyer/biome-config": "^2.1.0",
+        "@types/node": "^22.18.0",
+        "typescript": "^5.9.2",
+        "vitest": "^3.2.4"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "packageManager": "pnpm@10.15.0"
 }
