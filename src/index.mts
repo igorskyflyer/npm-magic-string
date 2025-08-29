@@ -1,6 +1,6 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
-import { scrambleString } from '@igor.dvlpr/scramble'
+import { scrambleString } from '@igorskyflyer/scramble'
 
 /**
  * A common string type for all string-related methods that can either be a string or a string array.
