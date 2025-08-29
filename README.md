@@ -104,7 +104,8 @@ All string-related methods use a common string type that can either be a string 
 
 <br>
 
-> [!NOTE]
+> ℹ️ **NOTE**
+>
 > The value is assigned to the accumulator as-is, no processing is performed.
 >
 
