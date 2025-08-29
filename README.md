@@ -1,49 +1,18 @@
-<h1 align="center">MagicString</h1>
-
-<br>
-
 <div align="center">
-  🧵 An expressive and chainable library for advanced string manipulations.
-  <br>
-  Supports appending, prepending, trimming, quoting, and
-  <br>
-  path formatting with customizable whitespace handling. 🦥
-  <br>
-  <br>
-  <em>Makes advanced String manipulations a piece of cake.</em>
+  <img src="https://raw.githubusercontent.com/igorskyflyer/npm-magic-string/main/media/magic-string.png" alt="Icon of MagicString" width="256" height="256">
+  <h1>MagicString</h1>
 </div>
 
 <br>
-<br>
 
-<div align="center">
-  <blockquote>
-    <br>
-    <h4>💖 Support further development</h4>
-    <span>I work hard for every project, including this one
-    <br>
-    and your support means a lot to me!
-    <br>
-    <br>
-    Consider buying me a coffee. ☕
-    <br>
-    <strong>Thank you for supporting my efforts! 🙏😊</strong></span>
-    <br>
-    <br>
-    <a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="150"></a>
-    <br>
-    <br>
-    <a href="https://github.com/igorskyflyer"><em>@igorskyflyer</em></a>
-    <br>
-    <br>
-    <br>
-  </blockquote>
-</div>
+<h4 align="center">
+  🧵 An expressive and chainable library for advanced string manipulations. Supports appending, prepending, trimming, quoting, and path formatting with customizable whitespace handling. Makes advanced String manipulations a piece of cake. 🦥
+</h4>
 
 <br>
 <br>
 
-## 📃 Table of contents
+## 📃 Table of Contents
 
 - [Features](#-features)
 - [Usage](#-usage)
@@ -72,31 +41,52 @@
   - [insert()](#insertvalue-stringvalue-index-number)
   - [substring()](#substringstart-number-end-number)
   - [scramble()](#scramble)
-- [Examples](#-examples)
+- [Examples](#️-examples)
 - [Changelog](#-changelog)
+- [Support](#-support)
 - [License](#-license)
 - [Related](#-related)
 - [Author](#-author)
 
----
+<br>
+<br>
 
 ## 🤖 Features
 
-- 🗣️ expressive and chainable
-- 📃 with many string manipulation methods
-- 👽 increases productiveness
+- 🪄 Chainable API - build complex string transformations step‑by‑step
+- ➕ Append & prepend - add text anywhere with ease
+- 🧹 Whitespace control - trim, normalize, or toggle trimming on/off
+- 🗨 Smart quoting - wrap values in single or double quotes automatically
+- 📂 Path‑safe formatting - auto‑quote paths with spaces
+- 🔄 Case transforms - switch to upper or lower case instantly
+- 🪢 Conditional append - add only when extra values exist
+- ✂️ Substring & insert - extract or inject text at any position
+- 🧩 Replace - swap substrings with precision
+- 🎲 Scramble - randomize characters for fun or obfuscation (powered by [ScRaMbLe](https://www.npmjs.com/package/@igorskyflyer/scramble))
+- 🧼 Array support - join string arrays into clean, single string
+- ⚡ Lightweight & dependency‑free - minimal footprint, maximum utility
 
+<br>
 <br>
 
 ## 🕵🏼 Usage
 
-Install it by executing:
+Install it by executing any of the following, depending on your preferred package manager:
 
-```shell
-npm i '@igor.dvlpr/magic-string'
+```bash
+pnpm add @igorskyflyer/magic-string
 ```
 
----
+```bash
+yarn add @igorskyflyer/magic-string
+```
+
+```bash
+npm i @igorskyflyer/magic-string
+```
+
+<br>
+<br>
 
 ## 🤹🏼 API
 
@@ -372,13 +362,14 @@ Returns the current instance of `MagicString`.
 
 Returns the current instance of `MagicString`.
 
----
+<br>
+<br>
 
-## ✨ Examples
+## 🗒️ Examples
 
-`example.mts`
+`example.ts`
 ```ts
-import { MagicString } from '@igor.dvlpr/magic-string'
+import { MagicString } from '@igorskyflyer/magic-string'
 
 
 console.log(
@@ -403,51 +394,74 @@ console.log(
 // prints 'START: HELLO \'WORLD\' "THIS IS A TEST" /USR/LOCAL/BIN "/USR/LOCAL/MY FILE.TXT" Trimmed   Not trimmed'
 ```
 
----
+
+<br>
+<br>
 
 ## 📝 Changelog
 
-📑 The changelog is available here: [CHANGELOG.md](https://github.com/igorskyflyer/npm-magic-string/blob/main/CHANGELOG.md).
+📑 The changelog is available here, [CHANGELOG.md](https://github.com/igorskyflyer/npm-magic-string/blob/main/CHANGELOG.md).
 
----
+<br>
+<br>
 
 ## 🪪 License
 
 Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/npm-magic-string/blob/main/LICENSE).
 
----
+<br>
+<br>
+
+## 💖 Support
+
+<div align="center">
+  I work hard for every project, including this one and your support means a lot to me!
+  <br>
+  Consider buying me a coffee. ☕
+  <br>
+  <br>
+  <a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="180" height="46"></a>
+  <br>
+  <br>
+  <em>Thank you for supporting my efforts!</em> 🙏😊
+</div>
+
+<br>
+<br>
 
 ## 🧬 Related
 
-[@igor.dvlpr/extendable-string](https://www.npmjs.com/package/@igor.dvlpr/extendable-string)
+[@igorskyflyer/extendable-string](https://www.npmjs.com/package/@igorskyflyer/extendable-string)
 
 > _🦀 ExtendableString allows you to create strings on steroids that have custom transformations applied to them, unlike common, plain strings. 🪀_
 
 <br>
 
-[@igor.dvlpr/str-is-in](https://www.npmjs.com/package/@igor.dvlpr/str-is-in)
+[@igorskyflyer/str-is-in](https://www.npmjs.com/package/@igorskyflyer/str-is-in)
 
 > _🧵 Provides ways of checking whether a String is present in an Array of Strings using custom Comparators. 🔍_
 
 <br>
 
-[@igor.dvlpr/normalized-string](https://www.npmjs.com/package/@igor.dvlpr/normalized-string)
+[@igorskyflyer/normalized-string](https://www.npmjs.com/package/@igorskyflyer/normalized-string)
 
 > _💊 NormalizedString provides you with a String type with consistent line-endings, guaranteed. 📮_
 
 <br>
 
-[@igor.dvlpr/astro-escaped-component](https://www.npmjs.com/package/@igor.dvlpr/astro-escaped-component)
+[@igorskyflyer/astro-escaped-component](https://www.npmjs.com/package/@igorskyflyer/astro-escaped-component)
 
 > _🏃🏻‍♂️‍➡️ An Astro component that holds only HTML-encoded content. 📜_
 
 <br>
 
-[@igor.dvlpr/strip-html](https://www.npmjs.com/package/@igor.dvlpr/strip-html)
+[@igorskyflyer/strip-html](https://www.npmjs.com/package/@igorskyflyer/strip-html)
 
 > _🥞 Removes HTML code from the given string. Can even extract text-only from the given an HTML string. ✨_
 
----
+<br>
+<br>
+<br>
 
 ## 👨🏻‍💻 Author
 Created by **Igor Dimitrijević** ([*@igorskyflyer*](https://github.com/igorskyflyer/)).
