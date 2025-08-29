@@ -1,7 +1,7 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
 import { beforeEach, describe, expect, it, suite } from 'vitest'
-import { MagicString } from '../src/index.mts'
+import { MagicString } from '../src/index.js'
 
 describe('🧪 MagicString tests 🧪', () => {
   let magicString: MagicString
